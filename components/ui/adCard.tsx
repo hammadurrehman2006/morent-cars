@@ -22,17 +22,17 @@ export const AdItem = ({
     <div className="relative">
       <Image src={bgImageUrl} width={1000} height={800} alt="AdItem Background" className="rounded-xl" />
       <div className="absolute top-4 left-4 z-10 md:top-6 md:left-6">
-        <h2 className="text-sm text-white leading-[36px] font-semibold mb-1 md:text-3xl md:max-w-[284px] md:mb-4">
+        <h2 className="text-sm text-white leading-[36px] font-semibold mb-1 md:text-3xl md:max-w-72 md:mb-4">
           {title}
         </h2>
-        <p className="text-xs max-w-xs font-medium text-white mb-3 md:text-base md:max-w-[284px] md:mb-5">
+        <p className="text-xs max-w-xs font-medium text-white mb-3 md:text-base md:max-w-72 md:mb-5">
           {description}
         </p>
         <Link href="/cars">
           <Button
             className={cn(
               btnBg,
-              "text-xs md:text-base text-white hover:bg-[#081742]",
+              "text-xs md:text-base  text-white hover:bg-[#081742]",
               btnBg === "bg-information" ? "py-3 px-7" : "py-2 px-5"
             )}
           >

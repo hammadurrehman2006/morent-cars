@@ -7,7 +7,7 @@ const Cars = () => {
   return (
 
     <>
-      <main className=" grid grid-cols-12 gap-2">
+      <main className=" grid grid-cols-12">
         <div className="col-span-2 relative border-r-2">
           <Filters />
         </div>
