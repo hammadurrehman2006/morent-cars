@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-background ${plusJakarta.className} container max-w-screen-xl mx-4`}
+        className={`bg-background ${plusJakarta.className} container max-w-screen-xl mx-auto`}
         >
         <Header/>
         {children}

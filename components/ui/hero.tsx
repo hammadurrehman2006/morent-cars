@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <div>
-        <section className="p-4">
+        <section className="p-4 mx-4">
           <HeroAds />
           <div className="flex flex-col md:flex-row bg-[#ffffff] justify-between items-center">
             <Options className="flex-1" title="Pick - Up" />
