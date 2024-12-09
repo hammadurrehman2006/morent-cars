@@ -46,13 +46,13 @@ export const CarItem = ({
   };
 
   return (
-    <div className="bg-white p-6 rounded-md flex flex-col justify-between gap-2 dark:bg-[#1F1F1F]">
+    <div className="bg-white p-6 rounded-md flex flex-col justify-between gap-2 dark:bg-secondary-500">
       <div className="flex justify-between">
         <div>
           <h2 className="font-bold text-xl text-[#1A202C] dark:text-white">{title}</h2>
           <p className="font-bold text-sm text-secondary-300">{type}</p>
         </div>
-        <div role="button" className="text-xl" onClick={handleLikeClick}>
+        <div role="button" onClick={handleLikeClick}>
           {liked ? (
             <FilledStarIcon /> // Render FilledStarIcon when liked is true
           ) : (
