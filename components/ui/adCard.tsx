@@ -20,7 +20,7 @@ export const AdItem = ({
 }: AdsProps) => {
   return (
     <div className="relative">
-      <Image src={bgImageUrl} alt="AdItem Background" className="rounded-xl" />
+      <Image src={bgImageUrl} width={1000} height={800} alt="AdItem Background" className="rounded-xl" />
       <div className="absolute top-4 left-4 z-10 md:top-6 md:left-6">
         <h2 className="text-sm text-white leading-[36px] font-semibold mb-1 md:text-3xl md:max-w-[284px] md:mb-4">
           {title}
