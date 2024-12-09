@@ -46,7 +46,8 @@ export const CarItem = ({
   };
 
   return (
-    <div className="bg-white p-6 rounded-md flex flex-col justify-between gap-2 dark:bg-secondary-500">
+    <>
+    <div className="bg-[#fff] p-6 rounded-md flex flex-col justify-between gap-2 dark:bg-secondary-500">
       <div className="flex justify-between">
         <div>
           <h2 className="font-bold text-xl text-[#1A202C] dark:text-white">{title}</h2>
@@ -87,7 +88,8 @@ export const CarItem = ({
                 </Link>
             </div>
         </div>
-    )
+        </>
+        )
 }
 
 CarItem.Skeleton = function CarItemSkeleton() {
