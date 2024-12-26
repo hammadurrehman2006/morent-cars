@@ -35,9 +35,9 @@ const Header = () => {
               <HeartIcon />
             </div>
           </div>
-          <div className="hover:scale-110 transition-transform duration-300">
+          <Link href={"/admin"}><div className="hover:scale-110 transition-transform duration-300">
             <Image width={50} height={50} src={profile} className="rounded-full" alt="profile" />
-          </div>
+          </div></Link>
         </div>
       </div>
 

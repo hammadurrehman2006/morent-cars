@@ -83,7 +83,8 @@ export const CarItem = ({
                     ${price}.00/
                     <span className='ml-0 text-sm text-secondary-300'>day</span>
                 </div>
-                <Link href={`/cars/${id}`}>
+                {/* <Link href={`/cars/${id}`}> */}
+                <Link href={`/cars/details`}>
                     <Button size='sm' className='bg-[#3563E9] text-white hover:bg-[#081742]'>See Details</Button>
                 </Link>
             </div>

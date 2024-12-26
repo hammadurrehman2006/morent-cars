@@ -7,13 +7,11 @@ const CarRow = ({
   data,
   className,
   mobileView,
-  isLoading,
 }: {
   rowTitle?: string;
   data: TPopularCar[];
   className?: string;
   mobileView?: boolean;
-  isLoading?: boolean;
 }) => {
   return (
     <div className="px-4 md:px-0">

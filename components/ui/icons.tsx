@@ -228,7 +228,7 @@ export const UpDownArrowIcon = () => {
 export const Heart = ({ className }: { className?: string }) => {
   return (
     <svg
-      className={className}
+      className= {className}
       width="24"
       height="24"
       viewBox="0 0 24 24"

@@ -1,4 +1,4 @@
-import CheckboxText from "./Check";
+import CheckboxText from "../ui/Check";
 import { Slider } from "@/components/ui/slider"
 
 const Filters = () => {
@@ -6,7 +6,7 @@ const Filters = () => {
   const capacities = ["2 people", "4 people", "6 people", "8 people"];
   return (
     <>
-    <aside className="bg-white  max-w-full text-secondary-300 font-semibold flex flex-col gap-y-4 lg:h-full">
+    <aside className="bg-white  max-w-full text-secondary-300 font-semibold flex flex-col gap-y-4 md:min-h-screen">
       <div className="flex md:flex-col md:mt-4 justify-center flex-row flex-wrap gap-3 md:gap-y-4 pl-3 mb-4">
         <h3>TYPE</h3>
         {categories.map((category) => (
