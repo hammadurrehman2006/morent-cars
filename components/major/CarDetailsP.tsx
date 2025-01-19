@@ -5,7 +5,8 @@ import Button from "@/components/ui/Button1";
 import { FilledStarIcon, Heart, StarIcon} from "@/components/ui/icons";
 import Filters from "@/components/major/Filters";
 import {CarsListR } from "@/components/major/Carist";
-export default function DetailPage() {
+import { Car } from "@/sanity/types/car";
+export default function DetailPage({allCars}: {allCars: Car[]}) {
     return (
         <section className="grid grid-cols-1 mb-12 justify-center lg:grid-cols-12 min-h-screen">
              <div className="lg:col-span-2 relative border-r-2 ">
@@ -79,7 +80,7 @@ export default function DetailPage() {
                     </div>
                 </div>
                 <Reviews />
-                    <CarsListR/>
+                    <CarsListR AllCars={allCars} />
             </div>
         </section>
     );
