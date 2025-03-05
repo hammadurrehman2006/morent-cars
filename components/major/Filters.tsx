@@ -1,8 +1,18 @@
+import { client } from "@/sanity/lib/client";
 import CheckboxText from "../ui/Check";
 import { Slider } from "@/components/ui/slider"
 
-const Filters = () => {
-  const categories = ["Sedan", "SUV", "Truck", "Hatchback"];
+const Filters = async() => {
+  const allCarTypes = await client.fetch(`
+    *[_type == "car"]{
+      type
+    }
+  `);
+  
+  // Extract `type` values and remove duplicates
+  const categories = Array.from(new Set(allCarTypes.map((car:string) => car)));
+  
+
   const capacities = ["2 people", "4 people", "6 people", "8 people"];
   return (
     <>
